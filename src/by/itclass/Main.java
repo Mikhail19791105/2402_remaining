@@ -17,7 +17,16 @@ public class Main {
 
         readFile(cats, dogs, errors);
 
+        // printResults(cats, dogs, errors);
+
+    var youngCats = sortByBirthDate(filterByDate(cats, true));
+    var oldCats = sortByBirthDate(filterByDate(cats, false));
+    var youngDogs = sortByBirthDate(filterByDate(dogs, true));
+    var oldDogs = sortByBirthDate(filterByDate(dogs, false));
+
+    printResults(youngCats, youngDogs, oldCats, oldDogs);
     }
 }
+
 
 
